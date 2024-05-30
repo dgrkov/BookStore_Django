@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>{{ book.title }}</li>
+            <li>{{ book.num_pages }}</li>
+            <li>{{ book.get_cover_display }}</li>
+            <li>{{ book.get_genre_display }}</li>
+            <li>{{ book.publisher }}</li>
+            <li><a href="/{{ book.author.id }}/author">{{ book.author }}</a></li>
+            <li>{{ book.cover_picture }}</li>
+            <li>{{ book.published }}</li>
+            <li>{{ book.available_copies }}</li>
+            <li>{{ book.sold_out }}</li>
+            <li>{{ book.price }}</li>
+        </ul>
+        
+    </div>    
+</body>
+</html>
